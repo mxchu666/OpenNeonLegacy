@@ -1,0 +1,5 @@
+﻿extracted/
+*_tmp/
+__pycache__/
+*.zst
+

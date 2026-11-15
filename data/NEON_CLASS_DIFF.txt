@@ -1,0 +1,5 @@
+vanilla=2507 neonJar=2509 added=2 removed=0
+=== ADDED (Neon's own) ===
+io.netty.resolver.dns
+io.netty.transport
+=== REMOVED ===
