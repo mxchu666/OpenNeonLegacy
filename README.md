@@ -27,6 +27,7 @@ tools/
   extract_bundle.ps1     extractor NEONBND2 (verificado 12/12, tamaños exactos)
   carve_named.py         talla recursos del image heap (headers SVM validados)
   carve_neon_assets.py   talla los 138 assets propios de Neon por path
+  carve_final.py         talla final verificado: los 62 assets publicados (offsets por probe de contenido)
   build_deobf_map.py     genera el mapa obf -> MCP (SRG 9.19)
 data/
   BUNDLE_MANIFEST.csv    tabla de entradas del bundle con offsets
@@ -34,11 +35,13 @@ data/
   DEOBF_CLASS_MAP.csv    2,507 clases mapeadas a nombres net.minecraft.*
   NEON_CLASS_DIFF.txt    diff exacto contra el client.jar oficial 1.8.9
   NEON_ASSETS.txt        138 recursos del espacio assets/minecraft/client/
+  EXTRACTION_REPORT.json por-archivo: offset de heap, sha256, confianza, método
+  SHADER_TEXT_BLOBS.json 87 blobs GLSL del heap (sha/tamaño/keywords; 6 publicados)
 docs/
   BUNDLE_FORMAT.md       especificación NEONBND2 (footer, tabla, zstd)
   RUNTIME_STRUCTURE.md   anatomía de la imagen nativa + inventario de libs
   RECOVERY_LIMITS.md     qué es y qué no es recuperable, y por qué
-assets/                  recursos tallados del image heap
+assets/minecraft/client/ 62 assets propios de Neon tallados del heap
 decompiled/              destino del trabajo AOT (aberto)
 ```
 
@@ -53,7 +56,26 @@ python tools/build_deobf_map.py mcp/extracted/joined.srg data/JAR_ENTRIES.txt da
 
 # 3. tallar recursos del image heap (requiere el client.jar oficial 1.8.9 para nombres exactos)
 python tools/carve_named.py extracted/neon.exe 0x77D7000 0x18823000 client.jar assets_out
+
+# 4. talla final de los 62 assets propios de Neon (offsets verificados, standalone)
+python tools/carve_final.py extracted/neon.exe .
 ```
+
+## Assets recuperados
+
+`assets/minecraft/client/` contiene los **62 archivos propios de Neon**
+recuperables del image heap, con tres niveles de confianza en
+`data/EXTRACTION_REPORT.json` (40 high / 21 medium / 1 confirmed):
+
+- Naming por **probe de contenido**, nunca por proximidad de path: PNGs por
+  inspección visual, fuentes por pareo de dims exactas atlas↔metadata,
+  shaders por keyword GLSL única, `teapot.obj` por stats geométricas
+  exactas (Utah teapot: 3643 v / 6320 f), `vine_boom.ogg` por matching
+  espectral 0.9925, `hotdog.dnet` por formato único (red Deep Netts).
+- Los pares de fuente se publican como `font_<width>/` — el nombre real de
+  carpeta no es recuperable y no se inventa (hipótesis skeet documentada).
+- Todo lo no embebido o corrupto está documentado en
+  `docs/RECOVERY_LIMITS.md` — nada se simula.
 
 ## Reproducción de la base vanilla
 

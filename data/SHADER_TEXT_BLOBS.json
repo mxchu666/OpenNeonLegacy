@@ -1,0 +1,1493 @@
+[
+ {
+  "off": 49630016,
+  "size": 5008,
+  "sha": "03bce5528db4",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "noise",
+   "normal",
+   "texture",
+   "position",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 49947504,
+  "size": 4750,
+  "sha": "72eba854dae3",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D BaseSampler;  "
+ },
+ {
+  "off": 50410680,
+  "size": 4340,
+  "sha": "1d36e80f5430",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "hsv",
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 50765744,
+  "size": 3892,
+  "sha": "a90193a194bf",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "hsv",
+   "round",
+   "gradient",
+   "normal",
+   "uv",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core  uniform vec2 u_Size; uniform float u_Radius;  uniform vec4 u_"
+ },
+ {
+  "off": 50869488,
+  "size": 3742,
+  "sha": "659f032a0adc",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "hsv",
+   "round",
+   "uv",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ve"
+ },
+ {
+  "off": 51262776,
+  "size": 3380,
+  "sha": "0602695c4b41",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "jfa",
+   "outline",
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 330 core  #define DEPTH_COLOR 1  uniform sampler2D u_MaskSampler0; unif"
+ },
+ {
+  "off": 51881640,
+  "size": 2970,
+  "sha": "ca63c9fc497d",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "hsv",
+   "round",
+   "outline",
+   "uv",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ve"
+ },
+ {
+  "off": 52517880,
+  "size": 2449,
+  "sha": "86c0b509668d",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "stars",
+   "noise",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  // source:"
+ },
+ {
+  "off": 52549664,
+  "size": 2406,
+  "sha": "c3c214fe6b65",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "stars",
+   "noise",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  // source:"
+ },
+ {
+  "off": 52791496,
+  "size": 2250,
+  "sha": "f0b22ec2a49b",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 52992912,
+  "size": 2105,
+  "sha": "5a0476eb9dbb",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "stencil",
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 53005584,
+  "size": 2085,
+  "sha": "65e0c2cbe0b3",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "noise",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  // https:/"
+ },
+ {
+  "off": 53265648,
+  "size": 1895,
+  "sha": "8c4746372ffe",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "outline",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 53271376,
+  "size": 1886,
+  "sha": "f38606448d98",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "hsv",
+   "round",
+   "texture",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  float roun"
+ },
+ {
+  "off": 53354192,
+  "size": 1843,
+  "sha": "ab0a153cbf11",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "round",
+   "outline",
+   "gradient",
+   "texture",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  float roun"
+ },
+ {
+  "off": 53400224,
+  "size": 1805,
+  "sha": "79e62baac4bc",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "uv",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 53427544,
+  "size": 1794,
+  "sha": "fffb22a1d119",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "noise",
+   "texture",
+   "uv",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 53461760,
+  "size": 1779,
+  "sha": "99985b63791c",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "round",
+   "gradient",
+   "texture",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  float roun"
+ },
+ {
+  "off": 53574424,
+  "size": 1705,
+  "sha": "c0fc13cc5fc8",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "uv",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  // source "
+ },
+ {
+  "off": 53596632,
+  "size": 1690,
+  "sha": "040f880aede4",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 53712024,
+  "size": 1593,
+  "sha": "dc09c4c9b6bc",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 53756616,
+  "size": 1554,
+  "sha": "e3bda09d1830",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 53993648,
+  "size": 1446,
+  "sha": "39269ad80b46",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "hsv",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 54160456,
+  "size": 1377,
+  "sha": "f0df061d109b",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "snow",
+   "texture",
+   "uv",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  // source "
+ },
+ {
+  "off": 54208424,
+  "size": 1338,
+  "sha": "c5517a521fbd",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "gaussian",
+   "blur",
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54261704,
+  "size": 1293,
+  "sha": "a71d5436d102",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 54330624,
+  "size": 1217,
+  "sha": "edf0551a6e6f",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "blur",
+   "texture",
+   "color",
+   "alpha",
+   "vignette"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D BlurSampler;  "
+ },
+ {
+  "off": 54334320,
+  "size": 1213,
+  "sha": "41c14557ef8c",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "stencil",
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54358776,
+  "size": 1202,
+  "sha": "09486e14bd1f",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 54442088,
+  "size": 1123,
+  "sha": "30a7f277863e",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "uv",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  // source "
+ },
+ {
+  "off": 54447744,
+  "size": 1115,
+  "sha": "36749cee0b3e",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "normal",
+   "texture",
+   "position",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54500384,
+  "size": 1053,
+  "sha": "2073b2832eef",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "round",
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54549984,
+  "size": 1021,
+  "sha": "acc20b69bab0",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54593184,
+  "size": 990,
+  "sha": "e4113e00fec0",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 2,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54594192,
+  "size": 990,
+  "sha": "e4113e00fec0",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 2,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54610320,
+  "size": 987,
+  "sha": "0fe7195b1736",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 54617320,
+  "size": 986,
+  "sha": "ca9efa495ad0",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 54637200,
+  "size": 980,
+  "sha": "a3ae646d504e",
+  "kind": "glsl",
+  "tags": [
+   "VERT",
+   "FRAG"
+  ],
+  "kw": [
+   "round",
+   "gradient",
+   "texture",
+   "mvp",
+   "position",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 54695560,
+  "size": 934,
+  "sha": "3a8d72f49988",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 54706904,
+  "size": 929,
+  "sha": "2682947543c2",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "normal",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 54729280,
+  "size": 902,
+  "sha": "13679e434457",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 54845840,
+  "size": 847,
+  "sha": "58c9c5151c9f",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "model",
+   "normal",
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 54847568,
+  "size": 847,
+  "sha": "388cab2e01e2",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D OverlaySampler"
+ },
+ {
+  "off": 54968328,
+  "size": 802,
+  "sha": "d82245f8581c",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "round",
+   "texture",
+   "uv",
+   "position",
+   "color",
+   "alpha",
+   "radius",
+   "rectangle"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ve"
+ },
+ {
+  "off": 54984600,
+  "size": 796,
+  "sha": "04473479ab9e",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "blur",
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 55001504,
+  "size": 788,
+  "sha": "5778dfa82283",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 55007904,
+  "size": 784,
+  "sha": "ba066469e9d2",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "gaussian",
+   "blur",
+   "texture",
+   "color",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55021384,
+  "size": 772,
+  "sha": "0b524d54014a",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha",
+   "radius"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55029208,
+  "size": 759,
+  "sha": "35695c513bf7",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 InSiz"
+ },
+ {
+  "off": 55049248,
+  "size": 742,
+  "sha": "83fdffd9b1f6",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 55115096,
+  "size": 701,
+  "sha": "f412f31437ab",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "noise",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D DitherSampler;"
+ },
+ {
+  "off": 55120824,
+  "size": 696,
+  "sha": "ec2835e6ffbc",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "uv",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  #define SQ"
+ },
+ {
+  "off": 55124384,
+  "size": 698,
+  "sha": "ffc8c4d3b25a",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord; varying "
+ },
+ {
+  "off": 55207704,
+  "size": 650,
+  "sha": "7d36fcc56942",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55262264,
+  "size": 606,
+  "sha": "9a54736293a1",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "model",
+   "normal",
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 55302528,
+  "size": 569,
+  "sha": "e60e9be9f42a",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "blur",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D PrevSampler;  "
+ },
+ {
+  "off": 55323232,
+  "size": 553,
+  "sha": "7c1865cbe7e4",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "stencil",
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55355256,
+  "size": 538,
+  "sha": "b178acb00a0d",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55364024,
+  "size": 526,
+  "sha": "7bdce581c8a2",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 InSiz"
+ },
+ {
+  "off": 55403232,
+  "size": 506,
+  "sha": "5c3a46b51233",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "round",
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 55531744,
+  "size": 454,
+  "sha": "96443f6604a6",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 OutSi"
+ },
+ {
+  "off": 55586704,
+  "size": 454,
+  "sha": "b3049b1b5e89",
+  "kind": "glsl",
+  "tags": [
+   "VERT",
+   "FRAG"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 55598504,
+  "size": 454,
+  "sha": "e5c2d2d7c879",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 InSiz"
+ },
+ {
+  "off": 55645464,
+  "size": 449,
+  "sha": "f0252080af7b",
+  "kind": "glsl",
+  "tags": [
+   "VERT",
+   "FRAG"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 55746720,
+  "size": 433,
+  "sha": "03c6422c6bb9",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D PrevSampler;  "
+ },
+ {
+  "off": 55776736,
+  "size": 429,
+  "sha": "3c0ba837218d",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55893296,
+  "size": 395,
+  "sha": "481fb26fb3b5",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 55948560,
+  "size": 373,
+  "sha": "ac171f88d4a6",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 InSiz"
+ },
+ {
+  "off": 55955616,
+  "size": 378,
+  "sha": "7fb776551840",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 InSiz"
+ },
+ {
+  "off": 55968472,
+  "size": 366,
+  "sha": "4b404ead631e",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "outline",
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler; uniform sampler2D OutlineSampler"
+ },
+ {
+  "off": 56015224,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56015944,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56017384,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56018104,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56018464,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56018824,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56020264,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56022064,
+  "size": 347,
+  "sha": "092ac3193ba8",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "texture",
+   "mvp",
+   "position"
+  ],
+  "dups": 8,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56037264,
+  "size": 333,
+  "sha": "c7a47b8c3bfe",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  varying vec2 texCoord;  uniform"
+ },
+ {
+  "off": 56078112,
+  "size": 315,
+  "sha": "ce970ae1ce7b",
+  "kind": "glsl",
+  "tags": [
+   "VERT",
+   "FRAG"
+  ],
+  "kw": [
+   "mvp",
+   "position",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform ma"
+ },
+ {
+  "off": 56103360,
+  "size": 306,
+  "sha": "099b27ca684a",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 120  attribute vec4 Position;  uniform mat4 ProjMat; uniform vec2 OutSi"
+ },
+ {
+  "off": 56113512,
+  "size": 294,
+  "sha": "f3a8e25bd706",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 330 core  uniform sampler2D u_Sampler0;  in vec2 v_TexCoord; out vec4 o"
+ },
+ {
+  "off": 56139320,
+  "size": 291,
+  "sha": "22b173c12fc3",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color",
+   "alpha"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 56146752,
+  "size": 282,
+  "sha": "5e8bfed0a850",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  uniform sa"
+ },
+ {
+  "off": 56422032,
+  "size": 198,
+  "sha": "ff5436bf8480",
+  "kind": "glsl",
+  "tags": [
+   "FRAG"
+  ],
+  "kw": [
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 400 core #extension GL_ARB_separate_shader_objects : enable  layout (lo"
+ },
+ {
+  "off": 56489872,
+  "size": 189,
+  "sha": "f83e26556a4b",
+  "kind": "glsl",
+  "tags": [
+   "FRAG",
+   "SAMP"
+  ],
+  "kw": [
+   "texture",
+   "color"
+  ],
+  "dups": 1,
+  "head": "#version 120  uniform sampler2D DiffuseSampler;  uniform vec4 ColorModulate;  va"
+ },
+ {
+  "off": 56533768,
+  "size": 187,
+  "sha": "5ace8511ae9d",
+  "kind": "glsl",
+  "tags": [
+   "VERT"
+  ],
+  "kw": [
+   "position"
+  ],
+  "dups": 1,
+  "head": "#version 400 compatibility #extension GL_ARB_separate_shader_objects : enable  o"
+ }
+]

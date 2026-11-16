@@ -30,6 +30,40 @@ devolver el código Java original del cliente, y esta es la razón técnica exac
 6. **Inventario de librerías** Java y C++ embebidas.
 7. **Recursos embebidos** (assets de Neon y de vanilla) tallados del image
    heap con validación de headers SVM.
+8. **62 assets propios de Neon** en `assets/minecraft/client/` con reporte
+   individual (`data/EXTRACTION_REPORT.json`: offset de heap, sha256,
+   confianza, método). 40 high / 21 medium / 1 confirmed — la confianza
+   "medium" significa que el nombre viene de un probe de contenido (dims
+   exactas, keywords GLSL, matching espectral), no de un path.
+
+## Assets propios: qué NO se recuperó (documentado, no simulado)
+
+De las 138 rutas en `assets/minecraft/client/`, estas no tienen blob
+recuperable en el heap — se documentan en vez de inventarse:
+
+- `fonts/inter_medium.ttf` — no hay ningún TTF/OTF embebido; la fuente se
+  resuelve en runtime (del sistema o remota).
+- `icons/jeffbenzos16.png`, `images/arbuzica.png`, `images/circle.png`,
+  `images/icons/cider.png`, `images/sliphack.png` — sin blob identificable.
+- `models/penis.obj`, `models/arbuzica.obj` — solo `models/teapot.obj`
+  está embebido (Utah teapot de NVIDIA, stats exactas: 3643 v / 6320 f).
+- `sounds/fortnut.wav`, `sounds/nut.wav` — cero WAV en el heap.
+- `item_registries.json` — no existe como JSON embebido; las referencias
+  del heap son NBT vanilla.
+- `subway/metadata.json` — el blob existe pero está corrupto en el heap
+  (JSON inválido desde el char 82); no se publica un dump mangleado.
+- Nombres reales de carpetas de fuentes: los 25 archivos de fuente se
+  publican como `font_<width>/` (15 dirs). Las cadenas de path del heap no
+  se pueden alinear con blobs por contenido (probes de proximidad/align
+  descartados — ver hallazgos). La carpeta `font_2248` es la candidata a
+  `fonts/skeet/` (2248², 2195 glyphs, lineH 1.0, kerning como lista) —
+  hipótesis documentada, no verificable.
+- 5 `metadata.json` de fuente (dirs font_1056/1088/1292/2224/2228)
+  truncadas en el heap (colas de GC): la raíz de la de 2224 es visible en
+  el heap pero no cierra.
+- 81 blobs de texto GLSL sin mapeo a un path: inventario completo por
+  sha256/tamaño/keywords en `data/SHADER_TEXT_BLOBS.json` (87 entradas,
+  incluye las 6 publicadas). Solo se publican los 6 con keyword única.
 
 ## Cómo reconstruir algo buildeable
 

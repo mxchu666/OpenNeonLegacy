@@ -1,0 +1,852 @@
+{
+ "summary": {
+  "total_files": 62,
+  "by_confidence": {
+   "high": 40,
+   "medium": 21,
+   "confirmed": 1
+  },
+  "naming_policy": "los pares de fuente se shipean como font_<width>/ porque el nombre real de carpeta no es recuperable por contenido (probes de path/proximidad descartados); ver docs/RECOVERY_LIMITS.md",
+  "heap": {
+   "file_offset": "0x77d7000",
+   "size": "0x18823000"
+  }
+ },
+ "files": [
+  {
+   "path": "assets/minecraft/client/classifier/hotdog.dnet",
+   "heap_offset": "0x1c6ec3c0",
+   "heap_offset_rel": "0x14f153c0",
+   "size": 5311137,
+   "sha256": "f9e7add31b114c20843683fe863c69d1422e1be4857c6429d7ff974b041622ff",
+   "confidence": "high",
+   "method": "unique-format",
+   "note": "red neuronal Deep Netts (clasificador hotdog); unico blob dnet del heap"
+  },
+  {
+   "path": "assets/minecraft/client/esp/cop.png",
+   "heap_offset": "0x78d8038",
+   "heap_offset_rel": "0x101038",
+   "size": 127554,
+   "sha256": "e83fce54da3387be027dd5211caaaa5856ba6d9d9b330c6977296a633c06705e",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "mugshot estilo policia 299x333",
+   "png_dims": [
+    299,
+    333
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/esp/floyd.png",
+   "heap_offset": "0x1a0caf78",
+   "heap_offset_rel": "0x128f3f78",
+   "size": 246125,
+   "sha256": "0aa431c50e95a6c19dc053775095b242ff1328535692a96917b0c879690ecd76",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "retrato 252x476 (estilo Floyd)",
+   "png_dims": [
+    252,
+    476
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/blocky.png",
+   "heap_offset": "0xac7a568",
+   "heap_offset_rel": "0x34a3568",
+   "size": 658,
+   "sha256": "74096f7b5c9967ceee03b64757d0b18a66e0064f61d35d07cfd97d4acb28f6ea",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "bitmap de font estilo MC 128x128",
+   "png_dims": [
+    128,
+    128
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1056/glyphmap.png",
+   "heap_offset": "0x18b05de0",
+   "heap_offset_rel": "0x1132ede0",
+   "size": 1091932,
+   "sha256": "c231ba28706e7535b459ef2e8ff5901350c8561659fad72cc08928aaa12808e0",
+   "confidence": "high",
+   "method": "dims-exact",
+   "note": "solo atlas: su metadata.json esta truncada en el heap (cola de GC); ver RECOVERY_LIMITS",
+   "png_dims": [
+    1056,
+    1056
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1068/glyphmap.png",
+   "heap_offset": "0x18d0dc90",
+   "heap_offset_rel": "0x11536c90",
+   "size": 937954,
+   "sha256": "30b621c800654cec81580aec547e962cfadc5f0e1e65ee3aecd30bce7343549c",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    1068,
+    1068
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1068/metadata.json",
+   "heap_offset": "0xf2c8f20",
+   "heap_offset_rel": "0x7af1f20",
+   "size": 135314,
+   "sha256": "b198217155ee8fce933588bcf1c35ea0c4110bea374b347a4d9ed7989dfbb439",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1088/glyphmap.png",
+   "heap_offset": "0x119d5af8",
+   "heap_offset_rel": "0xa1feaf8",
+   "size": 1111950,
+   "sha256": "cb780dca946ac92fe082dd6d72c20c89ddce8462cdf2b393653aed36c24769c5",
+   "confidence": "high",
+   "method": "dims-exact",
+   "note": "solo atlas: su metadata.json esta truncada en el heap (cola de GC); ver RECOVERY_LIMITS",
+   "png_dims": [
+    1088,
+    1088
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1292/glyphmap.png",
+   "heap_offset": "0x18df2cb8",
+   "heap_offset_rel": "0x1161bcb8",
+   "size": 1466624,
+   "sha256": "e7a1fbb4f93835ce5a1ba6fe6a664207fd4e2b5cbe304c63a6689072a55c01d1",
+   "confidence": "high",
+   "method": "dims-exact",
+   "note": "solo atlas: su metadata.json esta truncada en el heap (cola de GC); ver RECOVERY_LIMITS",
+   "png_dims": [
+    1292,
+    1292
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1304/glyphmap.png",
+   "heap_offset": "0x10dff3e0",
+   "heap_offset_rel": "0x96283e0",
+   "size": 1482928,
+   "sha256": "731a0f1666b63a8cbd759a387df607974e31db67ac7638d47899b302109fa703",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    1304,
+    1304
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1304/metadata.json",
+   "heap_offset": "0x1566c528",
+   "heap_offset_rel": "0xde95528",
+   "size": 187740,
+   "sha256": "9d33eb59158158bf528da6d12a77f48c9b4fa14474a98519f75a1a1a34bcee0c",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1580/glyphmap.png",
+   "heap_offset": "0x1a562658",
+   "heap_offset_rel": "0x12d8b658",
+   "size": 2284243,
+   "sha256": "194188deeea4c943747f5358706ebe19f079f20cf34084f3f498c9781da53a61",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    1580,
+    1580
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_1580/metadata.json",
+   "heap_offset": "0x14474138",
+   "heap_offset_rel": "0xcc9d138",
+   "size": 309526,
+   "sha256": "d7453282669e0df48a6aad55594c594d924be931f9c2d52900b4ca0b0677b521",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_2224/glyphmap.png",
+   "heap_offset": "0x16bea9d0",
+   "heap_offset_rel": "0xf4139d0",
+   "size": 4652524,
+   "sha256": "726dbe4a43e2843fbc1a84959e1695857f30b2a14345a2ba110adcfabdb25bea",
+   "confidence": "high",
+   "method": "dims-exact",
+   "note": "solo atlas: su metadata.json esta truncada en el heap (cola de GC); ver RECOVERY_LIMITS",
+   "png_dims": [
+    2224,
+    2224
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_2228/glyphmap.png",
+   "heap_offset": "0x14b0d098",
+   "heap_offset_rel": "0xd336098",
+   "size": 4689833,
+   "sha256": "556f6fb29c84dd6aa3e00fe0bad77db6cf0e519a38e787c629bac6fcce442983",
+   "confidence": "high",
+   "method": "dims-exact",
+   "note": "solo atlas: su metadata.json esta truncada en el heap (cola de GC); ver RECOVERY_LIMITS",
+   "png_dims": [
+    2228,
+    2228
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_2248/glyphmap.png",
+   "heap_offset": "0x10759650",
+   "heap_offset_rel": "0x8f82650",
+   "size": 4001070,
+   "sha256": "a8c601c3d62cf1ce2eb667962ae675a30bfa48b1334c573a028afe778c73cc94",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    2248,
+    2248
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_2248/metadata.json",
+   "heap_offset": "0x1360cd60",
+   "heap_offset_rel": "0xbe35d60",
+   "size": 406525,
+   "sha256": "1bfefb87b5beb545e80dc5d5140eaaf03cd3a9588ab45ca115791378bac6bfb2",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_2616/glyphmap.png",
+   "heap_offset": "0x1be52530",
+   "heap_offset_rel": "0x1467b530",
+   "size": 6786233,
+   "sha256": "d856ae9882358ac04ee4f0ddcd754b301bd021c4435bd6090a390bb5c761ad2f",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    2616,
+    2616
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_2616/metadata.json",
+   "heap_offset": "0x18c4b228",
+   "heap_offset_rel": "0x11474228",
+   "size": 797212,
+   "sha256": "f627dadb95ac3a7bfa7c5bcad49100f1b1c7cadda3a423e49ed4f361aa4b37b0",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_600/glyphmap.png",
+   "heap_offset": "0x135c5c58",
+   "heap_offset_rel": "0xbdeec58",
+   "size": 291009,
+   "sha256": "6e6a5f8b3f5a4e28afc07042d161d777462ca8d75b4b138e134b417f7a70a2e7",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    600,
+    600
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_600/metadata.json",
+   "heap_offset": "0x880a858",
+   "heap_offset_rel": "0x1033858",
+   "size": 51090,
+   "sha256": "a0a30d521c6135417fc5373bd9d90872e6b4ee8976da33f7a2dd0f9883103890",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_640/glyphmap.png",
+   "heap_offset": "0x147dd8d0",
+   "heap_offset_rel": "0xd0068d0",
+   "size": 376276,
+   "sha256": "3bc78c160120e02730e51bcf3556ceb23a50131c32472a618155f507e466fc23",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    640,
+    640
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_640/metadata.json",
+   "heap_offset": "0x80ae4d0",
+   "heap_offset_rel": "0x8d74d0",
+   "size": 95642,
+   "sha256": "5b94c5cf7f6adc43b1e25a5affa95fe4b2805acc1e0c15abbcebe2fd27e9460a",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_812/glyphmap.png",
+   "heap_offset": "0x18fff640",
+   "heap_offset_rel": "0x11828640",
+   "size": 621270,
+   "sha256": "727abaf248b25c7f81d19d3f1fd2b6598c9697ea88941b8223898acb687c719b",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    812,
+    812
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_812/metadata.json",
+   "heap_offset": "0x19ffd598",
+   "heap_offset_rel": "0x12826598",
+   "size": 842135,
+   "sha256": "cd1c71add0d127260f3fca8d301e2936edf193e1cf312fafb2aeef5672727e85",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_836/glyphmap.png",
+   "heap_offset": "0x1aabfc30",
+   "heap_offset_rel": "0x132e8c30",
+   "size": 690615,
+   "sha256": "8c0cdbbc9dc344e2ed1e4d64c04d1408379acb7625f2096e594b6b367ee49e0c",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    836,
+    836
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_836/metadata.json",
+   "heap_offset": "0x1b97b228",
+   "heap_offset_rel": "0x141a4228",
+   "size": 630597,
+   "sha256": "954c3355017ec60fec10075854d8c583d5518001f6be79b2b9712fdc2e8f7b5a",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_884/glyphmap.png",
+   "heap_offset": "0x1a107130",
+   "heap_offset_rel": "0x12930130",
+   "size": 583997,
+   "sha256": "7bd8512dda19430b9c5737f09a486dc37c6714cdfe6f98a2155792aa2f328bbb",
+   "confidence": "high",
+   "method": "dims-exact-pairing",
+   "note": "atlas MTSDF emparejado por dims exactas con metadata.json del mismo dir",
+   "png_dims": [
+    884,
+    884
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/fonts/font_884/metadata.json",
+   "heap_offset": "0x118a1d58",
+   "heap_offset_rel": "0xa0cad58",
+   "size": 599363,
+   "sha256": "944f16afddba87968004d8f4bf8c21529ffc8eb33897e5490e8ac7575307ada5",
+   "confidence": "high",
+   "method": "meta-parse",
+   "note": "metadata MTSDF parseada y emparejada por dims con su glyphmap"
+  },
+  {
+   "path": "assets/minecraft/client/icons/jeffbenzos32.png",
+   "heap_offset": "0xaa7f2c0",
+   "heap_offset_rel": "0x32a82c0",
+   "size": 2020,
+   "sha256": "e5901f94b2053a705e53203e5643abb3d80c29e7b513a3f12a5c83cf68086a75",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "pinguino con cadena; asignado por eliminacion (jeffbenzos16 no embebido)",
+   "png_dims": [
+    32,
+    32
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/icons/neon_16.png",
+   "heap_offset": "0xab6f0d0",
+   "heap_offset_rel": "0x33980d0",
+   "size": 1400,
+   "sha256": "97e8d8e7a599ec5027498d95f77fa8beaa447b87d860085e4ae33421c9691f00",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "triangulo neon 16x16 (branding)",
+   "png_dims": [
+    16,
+    16
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/icons/neon_32.png",
+   "heap_offset": "0xaac90f8",
+   "heap_offset_rel": "0x32f20f8",
+   "size": 1802,
+   "sha256": "b6de1bf2ce5a2adcb175ed3753e57c409453b9ba28857fa55bf2db8dd118b6af",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "triangulo neon 32x32 (branding)",
+   "png_dims": [
+    32,
+    32
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/icons/stitch_16.png",
+   "heap_offset": "0xabeb1b0",
+   "heap_offset_rel": "0x34141b0",
+   "size": 991,
+   "sha256": "262b9a20f17f751c2a1eb2d2cdd3be2d6da91b4148b1c9fe049ddc47e523bf8c",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "icono stitch 16x16",
+   "png_dims": [
+    16,
+    16
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/icons/stitch_32.png",
+   "heap_offset": "0xa94c4d8",
+   "heap_offset_rel": "0x31754d8",
+   "size": 2984,
+   "sha256": "f4d76cc4493dd80e4aff9584c5a9bc2003377b4d3d20d9abe4b68c6eb3dc8813",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "icono stitch 32x32",
+   "png_dims": [
+    32,
+    32
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/Sayori_Hanging_s_kill.png",
+   "heap_offset": "0x1b0bd720",
+   "heap_offset_rel": "0x138e6720",
+   "size": 254391,
+   "sha256": "a066f930ed48a680f0064e8977c1eea425ce264196882747fe1eccd12cb7adc3",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "imagen DDLC referencial 286x1050",
+   "png_dims": [
+    286,
+    1050
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/background.jpeg",
+   "heap_offset": "0x11998b88",
+   "heap_offset_rel": "0xa1c1b88",
+   "size": 249639,
+   "sha256": "31c6830ceb4b83767eccb214b973575894b4196a1e76e1800af79f88d130349a",
+   "confidence": "high",
+   "method": "jpeg-unique",
+   "note": "unico JPEG grande no-vanilla del heap (fondo)",
+   "pil_decode": "ok",
+   "png_dims": [
+    4000,
+    2000
+   ]
+  },
+  {
+   "path": "assets/minecraft/client/images/background_noise.png",
+   "heap_offset": "0x145cf850",
+   "heap_offset_rel": "0xcdf8850",
+   "size": 893173,
+   "sha256": "4d9412532a7f94bb69c9b978e87c0b7387caafb21c1ed1f475f15f03ee8d8b27",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "ruido marron-nube 1024x1024 (fondo blur)",
+   "png_dims": [
+    1024,
+    1024
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/cross.png",
+   "heap_offset": "0x9406758",
+   "heap_offset_rel": "0x1c2f758",
+   "size": 23728,
+   "sha256": "f892f996b0fac45691a633da952e2e4852465b4cca3249431e658ab82ecf31d6",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "X blanca 280x280 (cursor de aim/esp)",
+   "png_dims": [
+    280,
+    280
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/esp_noise.png",
+   "heap_offset": "0x8f2fc38",
+   "heap_offset_rel": "0x1758c38",
+   "size": 29567,
+   "sha256": "0045057f698c6e97ee9938627efc30d05e066053756c0cb80a3d177b02d793f9",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "ruido ESP; twin no-carvado en 0x175ffc8",
+   "png_dims": [
+    256,
+    256
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/freaky.png",
+   "heap_offset": "0x119342e0",
+   "heap_offset_rel": "0xa15d2e0",
+   "size": 274635,
+   "sha256": "5f51e8035c2f2649a4422bbda7b8b3350dfb8cec101c0170cf862063c7f0590d",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "palomas con dientes (meme)",
+   "png_dims": [
+    314,
+    312
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/glass_noise.png",
+   "heap_offset": "0x88d8038",
+   "heap_offset_rel": "0x1101038",
+   "size": 47756,
+   "sha256": "7afefc6dd1aa28c2d83dd9ee648a531c68a5de1070f51fa742314744db58dffc",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "ruido granular 256x256 (shader glass)",
+   "png_dims": [
+    256,
+    256
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/icons/close.png",
+   "heap_offset": "0xa913a30",
+   "heap_offset_rel": "0x313ca30",
+   "size": 3148,
+   "sha256": "73a9397d1d075ac8a60ca0cb0d5ee76780f026ec46043e2f2aa2475ed2064b54",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "X roja 38x38 (boton cerrar)",
+   "png_dims": [
+    38,
+    38
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/icons/cursor.png",
+   "heap_offset": "0xad6a710",
+   "heap_offset_rel": "0x3593710",
+   "size": 266,
+   "sha256": "01c7320f245c41dd5582935eea35a65ef2e341af67940166a74135414c979817",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "cursor 12x19",
+   "png_dims": [
+    12,
+    19
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/icons/thonk.png",
+   "heap_offset": "0x7f6e928",
+   "heap_offset_rel": "0x797928",
+   "size": 100540,
+   "sha256": "59b3521425e75d52e68cf82a6380b73ccec3503c68b469096901dbe73364c1bc",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "thonk 640x640 (emoji GUI)",
+   "png_dims": [
+    640,
+    640
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/loading.png",
+   "heap_offset": "0xa0e5ae0",
+   "heap_offset_rel": "0x290eae0",
+   "size": 9305,
+   "sha256": "5f1c3356dcd58b46639e2975de71bc1261b451c4005c76b7aecae6388333482d",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "pantalla 'Loading' 800x600",
+   "png_dims": [
+    800,
+    600
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/logo.png",
+   "heap_offset": "0x95e2988",
+   "heap_offset_rel": "0x1e0b988",
+   "size": 21615,
+   "sha256": "878ac99176a9f8444bb20670a65c33c3420c84b35143993c690d56fb4602e3e7",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "triangulo neon 223x193 (logo grande)",
+   "png_dims": [
+    223,
+    193
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/no_image.png",
+   "heap_offset": "0xa9f80c8",
+   "heap_offset_rel": "0x32210c8",
+   "size": 2400,
+   "sha256": "d80c5016e26345d767052801089997793418a3825c04864d9accf85562333e34",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "checkerboard magenta 1920x1080 (placeholder)",
+   "png_dims": [
+    1920,
+    1080
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/portraits/steve.png",
+   "heap_offset": "0x9f47140",
+   "heap_offset_rel": "0x2770140",
+   "size": 10901,
+   "sha256": "f09a82d98e084a87190d6e656412e85798f8282125c78fe969e5d321b7b4bcc0",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "retrato steve 128x128",
+   "png_dims": [
+    128,
+    128
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/run.png",
+   "heap_offset": "0x9f3f118",
+   "heap_offset_rel": "0x2768118",
+   "size": 10922,
+   "sha256": "e2388407e009e63140a193528dfa8b39a026d798a31b9d1715d577728544b79c",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "circulo play rojo (boton)",
+   "png_dims": [
+    128,
+    128
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/snowflake.png",
+   "heap_offset": "0x8d59188",
+   "heap_offset_rel": "0x1582188",
+   "size": 34349,
+   "sha256": "512307de7d7e271201575a3139578179415697715e28ef62b15f844081aa9fa1",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "copo 200x200 (shader snow/stars ESP)",
+   "png_dims": [
+    200,
+    200
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/stitch.png",
+   "heap_offset": "0x14771b88",
+   "heap_offset_rel": "0xcf9ab88",
+   "size": 306967,
+   "sha256": "5366f31b2a003525f11a80789ae89ab50447cfedcccec5d7c73658e33dc21bf3",
+   "confidence": "high",
+   "method": "visual-zoom",
+   "note": "stitch 908x954 (artwork)",
+   "png_dims": [
+    908,
+    954
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/images/unknown.png",
+   "heap_offset": "0xa9b2da0",
+   "heap_offset_rel": "0x31dbda0",
+   "size": 2641,
+   "sha256": "7e26dd4267963cf6d83db63464fa11962d8e8a53c2953bed70c9efb92b468aa9",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "checkerboard magenta (variante)",
+   "png_dims": [
+    200,
+    200
+   ],
+   "pil_decode": "ok"
+  },
+  {
+   "path": "assets/minecraft/client/models/teapot.obj",
+   "heap_offset": "0xe969366",
+   "heap_offset_rel": "0x7192366",
+   "size": 210584,
+   "sha256": "2faee35b520c3004f2a74bd9c70a51a990c48d54df92936750f2d9d35cc46062",
+   "confidence": "confirmed",
+   "method": "obj-stats",
+   "note": "Utah teapot NVIDIA exacta: 3643 verts, 6320 caras"
+  },
+  {
+   "path": "assets/minecraft/client/orialeng.jpg",
+   "heap_offset": "0x8e4e078",
+   "heap_offset_rel": "0x1677078",
+   "size": 31638,
+   "sha256": "8713bfd8fe88763a263ff7f7ef610df21da6b0e1e2e2ecaa81d64e59b3747bcb",
+   "confidence": "medium",
+   "method": "jpeg-unique",
+   "note": "JPEG no-vanilla; nombre por path string del heap",
+   "pil_decode": "ok",
+   "png_dims": [
+    612,
+    612
+   ]
+  },
+  {
+   "path": "assets/minecraft/client/shader_v3/esp/snow.frag",
+   "heap_offset": "0xab7dc48",
+   "heap_offset_rel": "0x33a6c48",
+   "size": 1377,
+   "sha256": "f0df061d109b334d1ae98e22ea909022363830d923bfa6ae1f3225729e434550",
+   "confidence": "medium",
+   "method": "keyword-glsl",
+   "note": "kw 'snow' + convencion uniforms MC"
+  },
+  {
+   "path": "assets/minecraft/client/shader_v3/esp/stars.frag",
+   "heap_offset": "0xa9f4820",
+   "heap_offset_rel": "0x321d820",
+   "size": 2406,
+   "sha256": "c3c214fe6b65831c0e93ac6a7e52df78d53e6fd98c2eefc35244f5a342df0510",
+   "confidence": "medium",
+   "method": "keyword-glsl",
+   "note": "escogida sobre twin 0x03215bf8 (2449 B): esta usa uniforms MC (u_Sampler0/u_MaskSampler0); el twin es el raw glslsandbox"
+  },
+  {
+   "path": "assets/minecraft/client/shader_v3/model.frag",
+   "heap_offset": "0xabc3e80",
+   "heap_offset_rel": "0x33ece80",
+   "size": 1115,
+   "sha256": "36749cee0b3e742a0e9c16890b947e46192e0251e20cfe6d1521d5bfb8d4d059",
+   "confidence": "medium",
+   "method": "keyword-glsl",
+   "note": "escogida sobre twin 0x034b3c38 (812 B): mayor tamano/keywords"
+  },
+  {
+   "path": "assets/minecraft/client/shader_v3/model.vert",
+   "heap_offset": "0xac25190",
+   "heap_offset_rel": "0x344e190",
+   "size": 847,
+   "sha256": "58c9c5151c9ff3aaf15f03e6ae5424d925c832dd39f1b8048c90fb8c3faca4d6",
+   "confidence": "medium",
+   "method": "keyword-glsl",
+   "note": "vert con u_mvp; solo esta asignada"
+  },
+  {
+   "path": "assets/minecraft/client/shader_v3/stencil.frag",
+   "heap_offset": "0xaa60b90",
+   "heap_offset_rel": "0x3289b90",
+   "size": 2105,
+   "sha256": "5a0476eb9dbbf1b5d9b1b698a4c51a8064561cbeb2dd30dae91ad8b67756304a",
+   "confidence": "medium",
+   "method": "keyword-glsl",
+   "note": "kw 'stencil'"
+  },
+  {
+   "path": "assets/minecraft/client/shaders/jump_flood.frag",
+   "heap_offset": "0xa8ba538",
+   "heap_offset_rel": "0x30e3538",
+   "size": 3380,
+   "sha256": "0602695c4b414ea484928630ade37f4288c1852bc63c7a2d90a7611f39b5dff6",
+   "confidence": "medium",
+   "method": "keyword-glsl",
+   "note": "kw 'jfa' (jump flood outline)"
+  },
+  {
+   "path": "assets/minecraft/client/sounds/vine_boom.ogg",
+   "heap_offset": "0x9834f78",
+   "heap_offset_rel": "0x205df78",
+   "size": 18822,
+   "sha256": "b8425fc170c48592d216966f7b74626d957f82adc76da3620a200e35ed5f5ed0",
+   "confidence": "medium",
+   "method": "spectral-0.9925",
+   "note": "vine boom 3.265 s mono; sha canonico codingale 5d3b2731.. no matchea exacto en heap; twins 0x1784130/0x178b470 documentados"
+  },
+  {
+   "path": "assets/minecraft/client/subway/atlas.png",
+   "heap_offset": "0x1cde0258",
+   "heap_offset_rel": "0x15609258",
+   "size": 11388257,
+   "sha256": "2cb66eebd776615dddc28531f81476e778b9bec01d4fba6ccbf44d2a8930aab0",
+   "confidence": "medium",
+   "method": "visual-zoom",
+   "note": "collage 4500x5000 con tiles 'Subway Surfers'; su metadata.json esta corrupta en heap (ver RECOVERY_LIMITS)",
+   "png_dims": [
+    4500,
+    5000
+   ],
+   "pil_decode": "ok"
+  }
+ ]
+}

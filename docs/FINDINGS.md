@@ -45,19 +45,39 @@ neon_legacy.exe (268,134,046 B)
 | oshi | — | info de OS |
 | jcodings (jruby) | — | encodings |
 
-## Assets propios de Neon (138, espacio `assets/minecraft/client/`)
+## Assets propios de Neon (138 rutas en `assets/minecraft/client/`)
 
-- GUI: `shader_v3/` (kawase blur, jump-flood outline, MTSDF, `skeet.frag`),
-  fuentes (inter, museo, tahoma, stratum_2, sf_pro, skeet, eternal_ui,
-  comic_sans, volte, epoca...), minimap, color picker.
-- ESP: `esp/cop.png`, `esp/floyd.png` (skins), `images/esp_noise.png`.
-- ML: `classifier/hotdog.dnet` (red neuronal embebida).
-- Modelos 3D: `models/teapot.obj`, `models/penis.obj`, `models/arbuzica.obj`.
-- Sonidos: `sounds/vine_boom.ogg`, `sounds/fortnut.wav`, `sounds/nut.wav`.
-- Iconos/branding: `icons/neon_16/32.png`, `icons/jeffbenzos16/32.png`,
-  `icons/stitch_16/32.png`, `images/logo.png`, `images/background.jpeg`.
-- Otros: `images/Sayori_Hanging_s_kill.png`, `item_registries.json`,
-  `subway/atlas.png` + `metadata.json`.
+**62 archivos recuperados y publicados** en este repo (talla final con
+`tools/carve_final.py`; reporte por archivo en `data/EXTRACTION_REPORT.json`).
+
+Contenido y confianza:
+
+| Grupo | Archivos | Confianza | Evidencia |
+|---|---|---|---|
+| Iconos (`icons/`) | 5 | 4 high, 1 medium | inspección visual (zoom sheets); jeffbenzos32 por eliminación |
+| ESP (`esp/`) | 2 | high | inspección visual (cop = mugshot, floyd = retrato) |
+| Imágenes (`images/`) | 17 PNG + 2 JPEG | mixta | visual; JPEGs por formato único + len-prefix SVM |
+| Fuentes (`fonts/`) | blocky + 15 dirs `font_<W>/` (25 archivos) | high | pareo por dims exactas atlas↔metadata MTSDF (dist 22) |
+| Shaders (6 de 87 blobs) | 6 GLSL | medium | keyword única (jfa, snow, stencil) + convención de uniforms MC |
+| `classifier/hotdog.dnet` | 1 | confirmed | único blob dnet del heap, 5.3 MB Deep Netts |
+| `models/teapot.obj` | 1 | confirmed | Utah teapot NVIDIA exacta: 3643 verts, 6320 caras |
+| `sounds/vine_boom.ogg` | 1 | medium | matching espectral 0.9925 vs vine boom (3.265 s mono) |
+| `subway/atlas.png` | 1 | medium | collage 4500×5000 visual |
+
+Decisiones de publicación (importantes):
+
+- **Nombres de fuentes**: `font_<width>/` — el nombre real de carpeta
+  (inter, museo, tahoma, skeet...) no es recuperable por contenido; no se
+  inventan nombres. La candidata a `skeet` es `font_2248` (hipótesis
+  documentada en `RECOVERY_LIMITS.md`).
+- **Shaders**: solo 6 blobs con keyword única se publican; los otros 81
+  (incluyendo 8 vértices `u_mvp` idénticos entre sí) quedan inventariados
+  por sha256/tamaño/keywords en `data/SHADER_TEXT_BLOBS.json`.
+- `stars.frag` se escojió sobre su twin (2449 B): la publicada usa uniforms
+  MC (`u_Sampler0`/`u_MaskSampler0`); el twin es el raw glslsandbox.
+- Lo **no embebido** (penis.obj, fortnut.wav, item_registries.json,
+  inter_medium.ttf, subway/metadata.json corrupta, jeffbenzos16, etc.)
+  está listado y explicado en `docs/RECOVERY_LIMITS.md`.
 
 ## Trazas de infraestructura (para el trabajo AOT abierto)
 
