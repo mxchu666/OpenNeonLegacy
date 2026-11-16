@@ -1,12 +1,21 @@
 # Trabajo AOT abierto — plan de decompilación
 
 Este directorio recoge el resultado del trabajo de decompilación del código
-AOT (`.text`, 125 MB) de `extracted/neon.exe`. Estado inicial: vacío.
+AOT (`.text`, 125 MB) de `extracted/neon.exe`.
+
+Estado actual: `java-skeletons/` contiene los **1,614 esqueletos
+top-level** del manifest firmado con nombre real MCP (vía
+`data/DEOBF_CLASS_MAP.csv`) y las 895 inner classes listadas en su clase
+padre. Es la estructura navegable del cliente — **no es descompilación**:
+el bytecode fue destruido por el AOT y los cuerpos de métodos solo existen
+como x86-64 (veredicto de ofuscación y por qué ZKM/JNIC no aplican:
+`docs/OBFUSCATION.md`).
 
 ## Punto de partida
 
 - La imagen es una GraalVM native image: cada método Java es una función x86-64.
-- Los nombres de clase están en `data/DEOBF_CLASS_MAP.csv` (obf → MCP).
+- Los nombres de clase están en `data/DEOBF_CLASS_MAP.csv` (obf → MCP) y ya
+  aplicados en `java-skeletons/`.
 - Los métodos concretos requieren identificarlos en el binario (no hay tabla
   de símbolos Java pública en la imagen; los strings `*_constructor_<sha>`
   y los descriptores sobrevivientes son las mejores anclas).

@@ -19,6 +19,7 @@ reproducibles, mapas de deobfuscación y documentación del formato.
 | ¿Qué cliente es? | **Minecraft vanilla 1.8.9 exacto** (2,507 clases = el jar oficial de Mojang, clase a clase) + netty, con los mods de Neon **integrados dentro de clases vanilla** (re-obfuscación con el diccionario de vanilla) |
 | ¿Qué librerías usa? | imgui-java + ImPlot/ImGuizmo/rapidjson/Assimp/Discord RPC (C), **Javalin**, netty, gson, guava, fastutil, zip4j, commons-* |
 | ¿Se puede recuperar el código Java? | **No verbatim** (AOT lo destruye). Lo extraíble está completo en este repo; el resto requiere RE método a método — ver `docs/RECOVERY_LIMITS.md` |
+| ¿Usa ZKM o JNIC? | **Ni uno ni otro** — son ofuscadores de bytecode y no existe bytecode en el artefacto. Veredicto con escaneo completo del heap: `docs/OBFUSCATION.md` |
 
 ## Estructura
 
@@ -28,6 +29,7 @@ tools/
   carve_named.py         talla recursos del image heap (headers SVM validados)
   carve_neon_assets.py   talla los 138 assets propios de Neon por path
   carve_final.py         talla final verificado: los 62 assets publicados (offsets por probe de contenido)
+  dump_class_skeletons.py esqueletos .java de las 2,509 clases del manifest con nombre MCP
   build_deobf_map.py     genera el mapa obf -> MCP (SRG 9.19)
 data/
   BUNDLE_MANIFEST.csv    tabla de entradas del bundle con offsets
@@ -40,9 +42,10 @@ data/
 docs/
   BUNDLE_FORMAT.md       especificación NEONBND2 (footer, tabla, zstd)
   RUNTIME_STRUCTURE.md   anatomía de la imagen nativa + inventario de libs
+  OBFUSCATION.md         veredicto ZKM/JNIC con evidencia (ni uno ni otro: no hay bytecode)
   RECOVERY_LIMITS.md     qué es y qué no es recuperable, y por qué
 assets/minecraft/client/ 62 assets propios de Neon tallados del heap
-decompiled/              destino del trabajo AOT (aberto)
+decompiled/              esqueletos MCP + destino del trabajo AOT (aberto)
 ```
 
 ## Reproducir
@@ -59,6 +62,9 @@ python tools/carve_named.py extracted/neon.exe 0x77D7000 0x18823000 client.jar a
 
 # 4. talla final de los 62 assets propios de Neon (offsets verificados, standalone)
 python tools/carve_final.py extracted/neon.exe .
+
+# 5. esqueletos .java de las 2,509 clases del manifest (nombres reales MCP)
+python tools/dump_class_skeletons.py .
 ```
 
 ## Assets recuperados
